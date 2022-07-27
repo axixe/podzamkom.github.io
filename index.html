@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico">
+    <title>ПОДЗАМКОМ</title>
+</head>
+<body id="body">
+    <header>
+        <div class="container">
+            <img src="img/logo.png" alt="logo" class="logo">
+            <h1>НЕ ЗНАЕТЕ, НА ЧТО ПОТРАТИТЬ ВЫХОДНЫЕ?</h1>
+            <h2> Компания  «ПОДЗАМКОМ» готова погрузить Вас в увлекательное приключение.<br>Незабываемое путешествие будет лучшим подарком для Вас и Ваших близких!</h2>
+            <a href="#leg">
+                <div class="order_button">ЗАКАЗАТЬ КВЕСТ</div>
+                <div class="order_buttonblur"></div>
+            </a>
+            <img src="img/arrow.png" alt="arrow" class="arrow">
+        </div>
+    </header>
+
+    <section class="leg" id="leg">
+        <div class="container">
+            <div class="leg_title">ВЫБЕРИ СВОЁ ПРИКЛЮЧЕНИЕ!</div>
+                <ol class="tab_list">
+                    <li class="tab_item is_active"><div class="vir_blur">ВИРУС</div></li>
+                    <li class="tab_item">ПОБЕГ</li>
+                    <li class="tab_item">СДЕЛКА С ДЬЯВОЛОМ</li>
+                </ol>
+
+                <ul class="content_list">
+                    <li class="content_item is_active">
+                        <div class="legendary">
+                            <div class="vir_imgblur"></div>
+                            <div class="vir_img"><img src="img/virus/virus_pic.png" alt="virus"></div>
+                            <div class="vir_content"> </div>
+                        </div>
+                    </li>
+                    
+                    <li class="content_item">
+                        <div class="legendary">
+                            <div class="esc_imgblur"></div>
+                            <div class="esc_img"><img src="img/esc/esc_pic.png" alt="esc"></div>
+                            <div class="esc_content"> </div>
+                        </div>
+                    </li>
+
+                    <li class="content_item">
+                        <div class="legendary">
+                            <div class="deal_imgblur"></div>
+                            <div class="deal_img"><img src="img/deal/deal_pic.png" alt="deal"></div>
+                            <div class="deal_content"> </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="market">
+        <div class="container">
+            <div class="market_title">ОПРЕДЕЛИЛИСЬ? ТОГДА ВПЕРЁД ЗА ЭМОЦИЯМИ!</div>
+
+                <div class="market_all">
+                    <div class="market_flex">
+                        <div class="market_block">
+                            <div class="quest">
+                                <div class="virus"></div>
+                                <button class="order" data-modal="order" id="order" onclick="openOrder();">ЗАКАЗАТЬ</button>
+                                <div class="price">~2.500₽</div>
+                                <div class="old">10+</div>
+                            </div>
+                            <div class="quest_name">Квест-игра<br>«ВИРУС»</div>
+                        </div>
+    
+                        <div class="market_block">
+                            <div class="quest">
+                                <div class="esc"></div>
+                                <button class="order" id="order" onclick="openOrder();">ЗАКАЗАТЬ</button>
+                                <div class="price">~2.000₽</div>
+                                <div class="old">10+</div>
+                            </div>
+                            <div class="quest_name">Квест-игра<br>«ВИРУС»</div>
+                        </div>
+    
+                        <div class="market_block">
+                            <div class="quest">
+                                <div class="deal"></div>
+                                <button class="order" id="order" onclick="openOrder();">ЗАКАЗАТЬ</button>
+                                <div class="price">~3.000₽</div>
+                                <div class="old">12+</div>
+                            </div>
+                            <div class="quest_name">Квест-игра<br>«ВИРУС»</div>
+                        </div>
+    
+                        <div class="market_block">
+                            <div class="quest">
+                                <div class="cert"></div>
+                                <button class="order" id="order" onclick="openOrder();">ЗАКАЗАТЬ</button>
+                                <div class="price">~3.500₽</div>
+                                <div class="old">1 шт.</div>
+                            </div>
+                            <div class="quest_name">Подарочный<br>сертификат</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_title">Остались вопросы? Напиши или позвони нам!</div>
+            <div class="footer_icons">
+                <a href="https://vk.com/podzamkom24">
+                    <div class="footer_vk"><i class="fa-brands fa-vk"></i></div>
+                </a>
+                <a href="https://instagram.com/podzamkom24">
+                    <div class="footer_inst"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+            </div>
+                <div class="footer_number"><a href="tel:+79832994075">+7-983-299-40-75</a></div>
+        </div>
+    </footer>
+    
+    <div class="checkout" id="checkout">
+        <div class="checkout_main">
+            <button class="checkout_xmark" id="order" onclick="closeOrder();"><i class="fa-solid fa-xmark"></i></button>
+            <div class="checkout_title">ЗАКАЗАТЬ ИГРУ</div>
+            
+            <ol class="tab_list">
+                <li class="otab_oitem is-active">ФОРМА</li>
+                <li class="otab_oitem ">ПРАВИЛА</li>
+            </ol>
+
+            <ul class="content_list">
+                <li class="ocontent_oitem is-active">
+                    <div class="checkout_string">
+                        <div class="checkout_attention"> </div>
+                        <div class="attention_descr">На данный момент онлайн-запись не работает.</div>
+                    </div>
+                </li>
+                <li class="ocontent_oitem">
+                    <div class="checkout_string">
+                        <p class="rules">
+                            <span>1.</span>	На прохождение всего квеста у команды есть ровно 90 минут или 100 минут, в зависимости от сценария игры. Если после указанного времени игры команда не успевает пройти квест, двери открываются администратором, и игра прекращается.<br>
+                            <span>2.</span>	В квесте могут принять участие от 2 до 6 человек, т.к. некоторые задания нельзя пройти в одиночку.<br>
+                            <span>3.</span>	Основная задача – выбраться из помещения, в котором вы оказались. Для этого нужно решать головоломки, выполнять логические задания, находить ключи, открывать замки и двери. Для прохождения необходимо только Ваше мышление, наблюдательность и внимание. Специальных знаний и навыков не требуется.<br>
+                            <span>4.</span>	Ни одна из головоломок не решается с помощью силы. Мы просим вас НЕ снимать со стен декорации, НЕ выламывать двери, НЕ взламывать замки, НЕ бросать в актеров или участников предметы интерьера, НЕ разбирать и НЕ разбивать на части предметы интерьера, мебель. В случае поломки предметов по вине участников, участники должны возместить материальный ущерб компании «ПОД ЗАМКОМ». <br>
+                            <span>5.</span>	Запрещается забирать с собой (красть) или умышленно портить любой реквизит или оборудование, находящееся на территории квеста.<br>
+                            <span>6.</span>	В некоторых квестах встречаются электронные сейфы. При вводе неправильного кода три раза подряд – автоматически блокируется сейф на  5 минут.<br>
+                            <span>7.</span>	Во всех помещениях установлена система видеонаблюдения. В любой момент по вашему требованию игра может быть остановлена, а участники выпущены из локации. Администратор находится с вами на связи в течение всего часа, участники всегда могут попросить подсказку.<br>
+                            <span>8.</span>	Запрещается прикасаться к линиям электропроводки, выкручивать винты, выкручивать лампы. НЕДОПУСТИМО: засовывать пальцы или металлические предметы в розетки, ломать или разбирать мебель, пользоваться спичками и зажигалками, поджигать что-либо.<br>
+                            <span>9.</span>	Игра не рекомендуется для лиц, младше 10 лет, лиц имеющих медицинские противопоказания для нахождения в замкнутом пространстве в условиях повышенного эмоционально-психического напряжения, в том числе хронические заболевания сердечно-сосудитой системы, нервно-психиатрические расстройства, сахарный диабет, астма и т.д. При наличии противопоказаний просим заранее сообщить об этом администратору.<br>
+                            <span>10.</span>	Администратор имеет право отказать в игре лицам, находящимся в состоянии алкогольного и/или наркотического опьянения.<br>
+                            Руководство квест-комнаты не несет никакой ответственности за причинение вреда здоровью участника любой степени тяжести, возникшее по причине невыполнения участником настоящих требований.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/c18eb15ed3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
